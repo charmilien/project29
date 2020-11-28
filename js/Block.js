@@ -1,15 +1,16 @@
 class Block{
-    constructor(x, y, width, height) {
+    constructor(x, y) 
+    {
         var options = {
            
-            restitution :0.4,
+            restitution :0.3,
             friction :0.0,
-            //isStatic:true
+         
            
         }
-        this.body = Bodies.rectangle(x, y, width, height, options);
-        this.width = width;
-        this.height = height;
+        this.body = Bodies.rectangle(x, y, 30, 40, options);
+        this.width = 30;
+        this.height = 40;
         World.add(world, this.body);
       }
       display(){
